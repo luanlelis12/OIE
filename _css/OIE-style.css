@@ -1,0 +1,778 @@
+@font-face {
+    font-family: Poppins-Thin;
+    src: url('Poppins/Poppins-Thin.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('Poppins/Poppins-Bold.ttf');
+}
+
+*:not(ul) {
+    margin: 0 auto;
+    font-family: Poppins-Regular;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* header */
+
+div.header {
+    background-color: #068E1D;
+    background-image: radial-gradient(ellipse at center,#068E1D 1%,#025310 125%);
+    min-height: 140px;
+    color: #fff;
+}
+
+.vertical-header {
+    display: table-cell;
+    vertical-align: middle;
+    height: 140px;
+}
+
+h1.header {
+    font-size: 100px;
+    display: inline-block;
+    padding-left: 25px;
+}
+
+span.header {
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 12px;
+}
+
+/* nav */
+
+div.barra-nav {
+    background-color: #DDD;
+    border-bottom: 2px solid #BBB;
+    height: 23px;
+}
+
+.barra-nav .vertical {
+    display: table-cell;
+    vertical-align: middle;
+    height: 25px;
+    width: 100%;
+}
+
+.barra-nav #a1{
+    margin-left: 45px;
+}
+
+a.barra-nav {
+    position: relative;
+    color: #000;
+}
+
+.barra-nav .vertical span{
+    margin-left: 12px;
+}
+
+/* section sobre o site e consulta */
+
+.section-oferecemos {
+    width: 100%;
+    height: 540px;
+}
+
+/* article falando sobre o site */
+
+div.article-oferecemos {
+    width: 450px;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    margin-left: 87px;
+    float: left;
+    padding: 10px;
+    padding-top: 30px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 0 rgba(0,1,1,0.1);
+}
+
+h2.article-oferecemos {
+    text-align: center;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+hr.article-oferecemos {
+    margin-top: 7px;
+    margin-bottom: 25px;
+    border: 0.5px solid #333;
+    background-color: #333;
+}
+
+p.article-oferecemos {
+    margin: 25px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+ul.article-oferecemos {
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.ul-oferecemos {
+    margin: 20px;
+    margin-left: 10px;
+}
+
+.ul-oferecemos ul {
+    display: table-cell;
+}
+
+.ul-oferecemos li {
+    font-family: Poppins-Thin;
+    font-weight: bolder;
+}
+
+/* article que consulta a manifestação */
+
+div.article-block-consulta {
+    background: rgb(33,157,41);
+    background: linear-gradient(110deg, rgba(33,157,41,1) 0%, rgba(21,122,27,1) 100%);
+    float: right;
+    color: #fff;
+    width: 50.4%;
+    height: 255px;
+    box-shadow: 10px 20px 15px 0 rgba(0,1,1,0.1);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.article-block-consulta form {
+    margin: 30px;
+    margin-left: 40px;
+}
+
+.article-block-consulta h2 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.article-block-consulta hr {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    border: 0.5px solid #fff;
+    background-color: #fff;
+}
+
+.article-block-consulta p {
+    text-align: justify;
+    margin-bottom: 14px;
+}
+
+.article-block-consulta input[type="text"] {
+    border: 1px solid #CCC;
+    width: 70%;
+    padding: 3px;
+}
+
+.article-block-consulta input[type="submit"] {
+    border: 1px solid #CCC;
+    width: 25%;
+    padding: 3px;
+    float: right;
+}
+
+/* section para escolher tipo de manifestação */
+
+.section-manifestação-escolha {
+    width: 100%;
+    height: 540px;
+}
+
+div.article-manifestação {
+    margin-top: 25px;
+    width: 100%;
+}
+
+h1.article-manifestação {
+    text-align: center;
+    font-weight: normal;
+}
+
+hr.article-manifestação {
+    border: 1px solid #333;
+    background-color: #333;
+    width: 75%;
+}
+
+.vertical-manifestação {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+a.block-manifestação {
+    color: #000;
+}
+
+div.block-manifestação {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 230px;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 0 rgba(0,1,1,0.1);
+}
+
+div.circle-manifestação {
+    background: radial-gradient(circle closest-side,#efefef 0%,#efefef 98%,rgba(0,0,0,0) 100%);
+    width:100px;
+    height:100px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+img.circle-manifestação {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+}
+
+#thumb-down {
+    top: 58%;
+}
+
+#thumb-up {
+    top: 48%;
+}
+
+h3.block-manifestação {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #167B1C;
+} 
+
+span.block-manifestação {
+    background: none;
+    border: 1px solid #167B1C;
+    border-radius: 3px;
+    color: #167B1C;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+span.block-manifestação, div.block-manifestação {
+    transition: 0.15s ease-in-out;
+}
+
+a.block-manifestação:hover div.block-manifestação {
+    background: #E9E9E9;
+}
+
+a.block-manifestação:hover span.block-manifestação {
+    background: #167B1C;
+    color: #fff;
+}
+
+h1.article-passo{
+    color: #047016;
+}
+
+/* login e cadastro */
+
+.section-login {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 5px 0 rgba(0,1,1,0.1);
+    border: 1px solid #E9E9E9;
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 54px;
+    padding-top: 65px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+span.article-login {
+    display: block;
+    font-size: 39px;
+    font-family: Poppins-Bold;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 49px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.block-login {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 23px;
+    box-sizing: border-box;
+    display: block;
+    box-sizing: inherit;
+}
+
+.label-input {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 7px;
+    font-weight: 400;
+}
+
+.input-login {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 0 7px 0 43px;
+    outline: none;
+    border: none;
+    overflow: visible;
+    margin: 0;
+    touch-action: manipulation;
+    box-sizing: border-box;
+}
+
+.input-login::-webkit-input-placeholder {
+    color: #d9d9d9;
+}
+
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input::before {
+    box-sizing: inherit;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7f7f7f;
+    transition: all 0.4s;
+}
+
+#focus1::after { 
+    display: block;
+    content: '';
+    background: url(../_img/icon-username.svg) no-repeat;
+    background-size: 30px 30px;
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+#focus2::after { 
+    display: block;
+    content: '';
+    background: url(../_img/icon-email.svg) no-repeat;
+    background-size: 30px 30px;
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+#focus3::after {
+    display: block;
+    content: '';
+    background: url(../_img/icon-padlock.svg) no-repeat;
+    background-size: 30px 30px;
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+#focus4::after {
+    display: block;
+    content: '';
+    background: url(../_img/icon-telephone.svg) no-repeat;
+    background-size: 30px 30px;
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.text-password {
+    padding-bottom: 31px;
+    padding-top: 8px;
+    text-align: right!important;
+}
+
+.text-password a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0px;
+    transition: all 0.4s;
+}
+
+.text-password a:hover {
+    color: #167B1C;
+}
+
+.button-login {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(110deg, rgba(33,157,41,1) 0%, rgba(21,122,27,1) 100%);
+    transition: 1s;
+}
+
+#button-cadastro {
+    margin-top: 50px;
+}
+
+.block-register {
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+}
+
+.block-register #s1 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    padding-bottom: 17px;
+}
+
+.block-register #s2 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.block-register #s2:hover {
+    color: #167B1C;
+}
+
+/* base das manifestação */
+
+.section-manifestação {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-manifestação h2 {
+    font-family: Poppins-Thin;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.section-manifestação h1 {
+    color: #047016;
+}
+
+.section-manifestação span {
+    color: #555;
+}
+
+.section-manifestação hr {
+    border: 0.5px solid #555;
+    background-color: #555;
+    margin-top: 12px;
+}
+
+div.article-passo-1 {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.block-selecionar-passo-1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.block-identificar {
+    width: 45%;
+    height: 130px;
+    border: 2px solid #167B1C;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0,1,1,0.1);
+    margin-bottom: 12px;
+    transition: background-color 0.3s;
+}
+
+.block-identificar #vertical {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.block-identificar h2 {
+    color: #167B1C;
+    font-family: Poppins-Regular;
+    font-weight: normal;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+
+.block-identificar label {
+    color: #167B1C;
+    border: 1px solid #167B1C;
+    border-radius: 3px;
+    padding: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.block-identificar input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; 
+}
+
+.block-identificar input:checked ~ label {
+    background-color: #167B1C;
+    color: #fff;
+}
+
+.block-identificar-login {
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    width: 30%;
+    height: 100px;
+    margin: 25px;
+    display: none;
+}
+
+.block-identificar-login #vertical {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.block-identificar-login h3 {
+    font-family: Poppins-medium;
+    font-weight: normal;
+    margin-bottom: -8px;
+}
+
+.block-identificar-login span {
+    font-size: 14px;
+}
+
+.block-identificar-login a {
+    border: 1px solid #333;
+    border-radius: 3px;
+    color: #333;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.block-identificar-login a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+div.article-passo-2 {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.article-passo-2 form, .article-passo-3 form {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    text-align: left;
+    width: 100%;
+}
+
+.article-passo-2 label {
+    font-size: 20px;
+}
+
+.article-passo-2 select {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+div.article-passo-3 {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.article-passo-3 textarea {
+    width: 99.5%;
+    height: 171px;
+    resize: none;
+}
+
+.btn-continuar, .btn-voltar {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-continuar, .btn-enviar {
+    margin-right: 10.9%;
+    float: right;
+}
+
+.btn-voltar {
+    margin-left: 10.9%;
+    float: left;
+}
+
+.btn-continuar a, .btn-voltar a {
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-enviar {
+    height: 37px;
+    width: 190px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin-top: 34px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.btn-continuar a:hover, .btn-voltar a:hover, .btn-enviar:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* site de consulta de manifestação */
+
+.section-consulta {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section-consulta hr {
+    border: 0.5px solid #333;
+    background-color: #333;
+}
+
+.article-consulta {
+    text-align: left;
+    width: 80%;
+}
+
+.article-consulta ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-consulta li span {
+    font-family: Poppins-Regular;
+    font-weight: lighter;
+    font-size: 26px;
+}
