@@ -3,37 +3,37 @@
 if (isset($_POST['denuncia'])) {
     $_SESSION['titulo'] = 'DENÚNCIA';
     $_SESSION['tipo'] = 'Denúncia';
-    header('Location: _sites/passo1.phtml');
+    header('Location: _sites/passo1.php');
 }
 
 if (isset($_POST['reclamacao'])) {
     $_SESSION['titulo'] = 'RECLAMAÇÃO';
     $_SESSION['tipo'] = 'Reclamação'; 
-    header('Location: _sites/passo1.phtml');
+    header('Location: _sites/passo1.php');
 }
 
 if (isset($_POST['solicitacao'])) {
     $_SESSION['titulo'] = 'SOLICITAÇÃO';
     $_SESSION['tipo'] = 'Solicitação'; 
-    header('Location: _sites/passo1.phtml');
+    header('Location: _sites/passo1.php');
 }
 
 if (isset($_POST['sugestao'])) {
     $_SESSION['titulo'] = 'SUGESTÃO';
     $_SESSION['tipo'] = 'Sugestão'; 
-    header('Location: _sites/passo1.phtml');
+    header('Location: _sites/passo1.php');
 }
 
 if (isset($_POST['elogio'])) {
     $_SESSION['titulo'] = 'ELOGIO';
     $_SESSION['tipo'] = 'Elogio'; 
-    header('Location: _sites/passo1.phtml');
+    header('Location: _sites/passo1.php');
 }
 
 if (isset($_POST['passo1'])) {
     if(isset($_POST['identificar'])) {
         $_SESSION['identificar'] = $_POST['identificar'];
-        header('Location: passo2.phtml');    
+        header('Location: passo2.php');    
     } else {
         echo '<script>alert("Por favor, escolha se você quer se identificar ou não.");</script>';
     }
@@ -43,7 +43,7 @@ if (isset($_POST['passo2'])) {
     if(isset($_POST['orgao']) && isset($_POST['assunto'])) {
         $_SESSION['orgao'] = $_POST['orgao'];
         $_SESSION['assunto'] = $_POST['assunto'];
-        header('Location: passo3.phtml'); 
+        header('Location: passo3.php'); 
     } else {
         echo '<script>alert("Por favor, escolha o assunto e o orgão destinatário da manifestação.");</script>';
     }
