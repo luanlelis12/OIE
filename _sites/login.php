@@ -1,6 +1,6 @@
 <?php require_once '../_php/authController.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +16,8 @@
         <div class="vertical-header">
             <h1 class="header">OIE</h1>
         </div>
-        <div class="vertical-header">
-            <span class="header" id="descricao">
+        <div class="vertical-header" id="descricao">
+            <span class="header">
                 Ouvidoria Institucional Educacional <br>
                 Instituto Federal Baiano - Campus Guanambi
             </span>
@@ -27,16 +27,16 @@
     <div class="barra-nav">
         <div class="vertical">
             <div id="link">
-                <span><a class="barra-nav" id="a1" href="../index.phtml">#Início</a></span>
+                <span><a class="barra-nav" id="a1" href="../index.php">#Início</a></span>
                 <span>></span>
-                <span><a class="barra-nav" href="#">Cadastro</a></span>
+                <span><a class="barra-nav" href="#">Login</a></span>
             </div>
         </div>
     </div>
 
     <div class="section-login">
-        <form class="article-login" method="post">
-            <span class="article-login">Cadastro</span>
+        <form class="article-login" action="login.php" method="post">
+            <span class="article-login">Login</span>
 
             <?php if(count($errors) > 0): ?>
                 <div class="alert-error">
@@ -47,51 +47,40 @@
                 </div>
             <?php endif ?>
 
-            <div class="block-login" data-validate="Nome é requerido">
-                <span class="label-input">Nome completo *</span><br>
-                <input class="input-login" type="text" name="nome" placeholder="Digite seu nome completo">
-                <span class="focus-input" id="focus1" data-symbol="">
-                </span>
-            </div>
-
             <div class="block-login" data-validate="E-mail é requerido">
-                <span class="label-input">E-mail *</span><br>
-                <input class="input-login" type="email" name="email" placeholder="Digite seu e-mail">
+                <span class="label-input">E-mail</span><br>
+                <input class="input-login" type="text" name="email" placeholder="Digite seu e-mail">
                 <span class="focus-input" id="focus2" data-symbol="">
                 </span>
             </div>
             
             <div class="block-login" data-validate="Senha é requerido">
-                <span class="label-input">Senha *</span><br>
+                <span class="label-input">Senha</span><br>
                 <input class="input-login" type="password" name="senha" placeholder="Digite sua senha">
                 <span class="focus-input" id="focus3" data-symbol="">
                 </span>
             </div>
 
-            <div class="block-login" data-validate="Senha é requerido">
-                <span class="label-input">Confirme sua Senha *</span><br>
-                <input class="input-login" type="password" name="senha-conf" placeholder="Digite novamente sua senha">
-                <span class="focus-input" id="focus3" data-symbol="">
-                </span>
+            <div class="text-password">
+                <a href="#">
+                    Esqueceu a senha?
+                </a>
             </div>
 
-            <div class="block-button" id="button-cadastro">
-                <button class="button-login">
-                    <input class="button-login" type="submit" value="FAZER CADASTRO" name="Cadastrar">
-                </button>
+            <div class="block-button">
+                <input class="button-login" type="submit" value="FAZER LOGIN" name="logar">
             </div>
 
             <div class="block-register">
                 <span id="s1">
-                    Caso já tenha uma conta
+                    Caso não tenha uma conta
                 </span> 
-                <a id="s2" href="login.phtml">
+                <a id="s2" href="cadastro.php">
                     Clique aqui
                 </a>
             </div>
 
         </form>
-
     </div>
 
 </body>

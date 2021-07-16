@@ -62,7 +62,7 @@ if (isset($_POST['Cadastrar'])) {
 
             sendVerificationEmail($email, $token);
 
-            header('Location: ../_sites/cadastro.phtml');
+            header('Location: ../_sites/cadastro.php');
             exit();
         } else {
             $errors['db_error'] = "Database error: falha ao cadastrar";
@@ -96,7 +96,7 @@ if (isset($_POST['logar'])) {
         $_SESSION['email'] = $user['email'];
         $_SESSION['verified'] = $user['verified'];
 
-        header('location: ../index.phtml');
+        header('location: ../index.php');
         exit();
     } else {
         $errors['login_fail'] = "Credenciais erradas";
@@ -110,7 +110,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     unset($_SESSION['email']);
     unset($_SESSION['verified']);
-    header('location: index.phtml');
+    header('location: index.php');
     exit();
 }
 
@@ -130,7 +130,7 @@ function verifyUser($token)
             $_SESSION['email'] = $user['email'];
             $_SESSION['verified'] = 1;
 
-            header('location: index.phtml');
+            header('location: index.php');
             exit();
         } 
 

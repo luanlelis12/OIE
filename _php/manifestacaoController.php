@@ -97,7 +97,7 @@ if (isset($_POST['enviar'])) {
         $_SESSION['descricao'] = "";
         $_SESSION['assunto'] = "";
         
-        echo("<script type='text/javascript'>alert('A chave de sua manifestação é ". $chave .". Com ela você poderá acessar-lá para verificar a manifestação.'); location.href='http://localhost/oie/index.phtml';</script>");
+        echo("<script type='text/javascript'>alert('A chave de sua manifestação é ". $chave .". Com ela você poderá acessar-lá para verificar a manifestação.'); location.href='http://localhost/oie/index.php';</script>");
     } else {
         $errors['db_error'] = "Database error: falha ao enviar manifestação";
     }

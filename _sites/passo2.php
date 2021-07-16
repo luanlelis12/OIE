@@ -83,7 +83,7 @@ if (!isset($_SESSION['id'])) {
             <hr>
 
         <div class="btns-form">
-            <a class="btn-voltar" href="passo1.phtml">Voltar</a>
+            <a class="btn-voltar" href="passo1.php">Voltar</a>
             <input class="btn-continuar" type="submit" name='passo2' value="Continuar"/>
         </div>
 

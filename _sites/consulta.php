@@ -39,7 +39,7 @@ $result = mysqli_query($conexao, $query);
     <div class="barra-nav">
         <div class="vertical">
             <div id="link">
-                <span><a class="barra-nav" id="a1" href="../index.phtml">#Início</a></span>
+                <span><a class="barra-nav" id="a1" href="../index.php">#Início</a></span>
                 <span>></span>
                 <span><a class="barra-nav" href="#">Consulta</a></span>
             </div>
@@ -105,7 +105,7 @@ $result = mysqli_query($conexao, $query);
             <?php } ?>
 
             <div class="btns-form">
-                <a class="btn-voltar" href="../index.phtml">Voltar</a>
+                <a class="btn-voltar" href="../index.php">Voltar</a>
             </div>
 
         </div>

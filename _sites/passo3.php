@@ -4,11 +4,10 @@ require_once '../_php/manifestacaoController.php';
 if (!isset($_SESSION['id'])) {
     echo("<script type='text/javascript'>alert('Para fazer uma manifestação é preciso fazer o login. Por favor, cadastra-se ou faça o login.'); location.href='http://localhost/oie/index.php';</script>");   
 }
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,53 +36,38 @@ if (!isset($_SESSION['id'])) {
     <div class="barra-nav">
         <div class="vertical">
             <div id="link">
-                <span><a class="barra-nav" id="a1" href="../index.phtml">#Início</a></span>
+                <span><a class="barra-nav" id="a1" href="../index.php">#Início</a></span>
                 <span>></span>
                 <span><a class="barra-nav" href="#"><?php echo $_SESSION['tipo']; ?></a></span>
             </div>
         </div>
     </div>
 
-    <div class="section-manifestação passo-1">
+    <div class="section-manifestação passo-3">
 
         <h2><?php echo $_SESSION['titulo']; ?></h2>
-        <h1>Você quer se identificar?</h1>
-        <span>Passo 1/3</span>
+        <h1>Faça uma descrição</h1>
+        <span>Passo 3/3</span>
 
-        <div class="article-passo-1">
+        <div class="article-passo-3">
 
             <hr>
 
             <form method="POST">
+                
+                <label for="descricao">Descrição da manifestação:</label> <br>
 
-            <div class="block-selecionar-passo-1">
-                <div class="block-identificar" id="block-identificar-1">
-                    <div>
-                        <h2>Quero me identificar</h2>
-                        <input type="radio" name="identificar" value="1" id="identificar">
-                        <label for="identificar" id="label-identificar">Selecionar</label>
-                    </div>
-                </div>
-            
-                <div class="block-identificar" id="block-identificar-2">
-                    <div>
-                        <h2>Não quero me identificar</h2>
-                        <input type="radio" name="identificar" value="0" id="nao-identificar">
-                        <label for="nao-identificar">Selecionar</label>
-                    </div>
-                </div>
-            </div>
+                <textarea maxlength="200" name="descricao" id="descricao"></textarea>
 
             <hr>
 
         <div class="btns-form">
-            <a class="btn-voltar" href="../index.phtml">Voltar</a>
-            <input class="btn-continuar" type="submit" name='passo1' value="Continuar"/>
+            <a class="btn-voltar" href="passo2.php">Voltar</a>
+            <input class="btn-continuar" type="submit" name='enviar' value="Enviar"/>
         </div>
 
         </form>
-
-        </div>
+        
 
     </div>
 
