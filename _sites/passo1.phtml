@@ -26,7 +26,7 @@ if (!isset($_SESSION['id'])) {
         <div class="vertical-header">
             <h1 class="header">OIE</h1>
         </div>
-        <div class="vertical-header">
+        <div class="vertical-header" id="descricao">
             <span class="header">
                 Ouvidoria Institucional Educacional <br>
                 Instituto Federal Baiano - Campus Guanambi
@@ -37,7 +37,7 @@ if (!isset($_SESSION['id'])) {
     <div class="barra-nav">
         <div class="vertical">
             <div id="link">
-                <span><a class="barra-nav" id="a1" href="../index.php">#Início</a></span>
+                <span><a class="barra-nav" id="a1" href="../index.phtml">#Início</a></span>
                 <span>></span>
                 <span><a class="barra-nav" href="#"><?php echo $_SESSION['tipo']; ?></a></span>
             </div>
@@ -58,7 +58,7 @@ if (!isset($_SESSION['id'])) {
 
             <div class="block-selecionar-passo-1">
                 <div class="block-identificar" id="block-identificar-1">
-                    <div id="vertical">
+                    <div>
                         <h2>Quero me identificar</h2>
                         <input type="radio" name="identificar" value="1" id="identificar">
                         <label for="identificar" id="label-identificar">Selecionar</label>
@@ -66,7 +66,7 @@ if (!isset($_SESSION['id'])) {
                 </div>
             
                 <div class="block-identificar" id="block-identificar-2">
-                    <div id="vertical">
+                    <div>
                         <h2>Não quero me identificar</h2>
                         <input type="radio" name="identificar" value="0" id="nao-identificar">
                         <label for="nao-identificar">Selecionar</label>
@@ -76,13 +76,14 @@ if (!isset($_SESSION['id'])) {
 
             <hr>
 
+        <div class="btns-form">
+            <a class="btn-voltar" href="../index.phtml">Voltar</a>
+            <input class="btn-continuar" type="submit" name='passo1' value="Continuar"/>
         </div>
 
-        <div class="btn-voltar"><a href="../index.php">Voltar para início</a></div>
-
-        <div class="btn-continuar"><button name='passo1'>Continuar</button></div>
-
         </form>
+
+        </div>
 
     </div>
 

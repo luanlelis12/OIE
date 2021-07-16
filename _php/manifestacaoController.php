@@ -3,52 +3,60 @@
 if (isset($_POST['denuncia'])) {
     $_SESSION['titulo'] = 'DENÚNCIA';
     $_SESSION['tipo'] = 'Denúncia';
-    header('Location: _sites/passo1.php');
+    header('Location: _sites/passo1.phtml');
 }
 
 if (isset($_POST['reclamacao'])) {
     $_SESSION['titulo'] = 'RECLAMAÇÃO';
     $_SESSION['tipo'] = 'Reclamação'; 
-    header('Location: _sites/passo1.php');
+    header('Location: _sites/passo1.phtml');
 }
 
 if (isset($_POST['solicitacao'])) {
     $_SESSION['titulo'] = 'SOLICITAÇÃO';
     $_SESSION['tipo'] = 'Solicitação'; 
-    header('Location: _sites/passo1.php');
+    header('Location: _sites/passo1.phtml');
 }
 
 if (isset($_POST['sugestao'])) {
     $_SESSION['titulo'] = 'SUGESTÃO';
     $_SESSION['tipo'] = 'Sugestão'; 
-    header('Location: _sites/passo1.php');
+    header('Location: _sites/passo1.phtml');
 }
 
 if (isset($_POST['elogio'])) {
     $_SESSION['titulo'] = 'ELOGIO';
     $_SESSION['tipo'] = 'Elogio'; 
-    header('Location: _sites/passo1.php');
+    header('Location: _sites/passo1.phtml');
 }
 
 if (isset($_POST['passo1'])) {
-    $_SESSION['identificar'] = $_POST['identificar'];
-    header('Location: passo2.php');
+    if(isset($_POST['identificar'])) {
+        $_SESSION['identificar'] = $_POST['identificar'];
+        header('Location: passo2.phtml');    
+    } else {
+        echo '<script>alert("Por favor, escolha se você quer se identificar ou não.");</script>';
+    }
 }
 
 if (isset($_POST['passo2'])) {
-    $_SESSION['orgao'] = $_POST['orgao'];
-    $_SESSION['assunto'] = $_POST['assunto'];
-    header('Location: passo3.php');
+    if(isset($_POST['orgao']) && isset($_POST['assunto'])) {
+        $_SESSION['orgao'] = $_POST['orgao'];
+        $_SESSION['assunto'] = $_POST['assunto'];
+        header('Location: passo3.phtml'); 
+    } else {
+        echo '<script>alert("Por favor, escolha o assunto e o orgão destinatário da manifestação.");</script>';
+    }
+    
 }
 
 if (isset($_POST['enviar'])) {
-    $_SESSION['descricao'] = $_POST['descricao'];
 
+    $descricao = $_POST['descricao'];
     $tipo = $_SESSION['tipo'];
     $identificar = $_SESSION['identificar'];
     $orgao = $_SESSION['orgao'];
     $assunto = $_SESSION['assunto'];
-    $descricao = $_SESSION['descricao'];
     $id_user = $_SESSION['id'];
     $status = "Enviada";
     $resposta = "Sem resposta";
@@ -89,7 +97,7 @@ if (isset($_POST['enviar'])) {
         $_SESSION['descricao'] = "";
         $_SESSION['assunto'] = "";
         
-        echo("<script type='text/javascript'>alert('A chave de sua manifestação é ". $chave .". Com ela você poderá acessar-lá para verificar a manifestação.'); location.href='http://localhost/oie/index.php';</script>");
+        echo("<script type='text/javascript'>alert('A chave de sua manifestação é ". $chave .". Com ela você poderá acessar-lá para verificar a manifestação.'); location.href='http://localhost/oie/index.phtml';</script>");
     } else {
         $errors['db_error'] = "Database error: falha ao enviar manifestação";
     }

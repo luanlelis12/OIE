@@ -25,7 +25,7 @@ if (!isset($_SESSION['id'])) {
         <div class="vertical-header">
             <h1 class="header">OIE</h1>
         </div>
-        <div class="vertical-header">
+        <div class="vertical-header" id="descricao">
             <span class="header">
                 Ouvidoria Institucional Educacional <br>
                 Instituto Federal Baiano - Campus Guanambi
@@ -61,11 +61,10 @@ if (!isset($_SESSION['id'])) {
 
             <hr>
 
+        <div class="btns-form">
+            <a class="btn-voltar" href="passo2.phtml">Voltar</a>
+            <input class="btn-continuar" type="submit" name='enviar' value="Enviar"/>
         </div>
-
-        <div class="btn-voltar"><a href="passo2.php">Voltar</a></div>
-
-        <input type="submit" name="enviar" value="Enviar manifestação" class="btn-enviar">
 
         </form>
 

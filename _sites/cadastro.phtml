@@ -17,7 +17,7 @@
             <h1 class="header">OIE</h1>
         </div>
         <div class="vertical-header">
-            <span class="header">
+            <span class="header" id="descricao">
                 Ouvidoria Institucional Educacional <br>
                 Instituto Federal Baiano - Campus Guanambi
             </span>
@@ -27,7 +27,7 @@
     <div class="barra-nav">
         <div class="vertical">
             <div id="link">
-                <span><a class="barra-nav" id="a1" href="../index.php">#Início</a></span>
+                <span><a class="barra-nav" id="a1" href="../index.phtml">#Início</a></span>
                 <span>></span>
                 <span><a class="barra-nav" href="#">Cadastro</a></span>
             </div>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="section-login">
-        <form class="article-login" action="cadastro.php" method="post">
+        <form class="article-login" method="post">
             <span class="article-login">Cadastro</span>
 
             <?php if(count($errors) > 0): ?>
@@ -85,7 +85,7 @@
                 <span id="s1">
                     Caso já tenha uma conta
                 </span> 
-                <a id="s2" href="login.php">
+                <a id="s2" href="login.phtml">
                     Clique aqui
                 </a>
             </div>
