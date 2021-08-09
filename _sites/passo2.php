@@ -3,6 +3,8 @@ require_once '../_php/manifestacaoController.php';
 
 if (!isset($_SESSION['id'])) {
     echo("<script type='text/javascript'>alert('Para fazer uma manifestação é preciso fazer o login. Por favor, cadastra-se ou faça o login.'); location.href='http://localhost/oie/index.php';</script>");   
+} elseif (!isset($_SESSION['identificar'])) {
+    header('Location: passo1.php');
 }
 ?>
 

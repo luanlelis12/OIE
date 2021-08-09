@@ -6,7 +6,6 @@ if (isset($_GET['token'])) {
     $token = $_GET['token'];
     verifyUser($token);
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +49,9 @@ if (isset($_GET['token'])) {
                 <button onclick="myFunction()" class="profile-button dropbtn"><div><span class="dropbtn" id="span-user">Perfil</span><svg class="dropbtn" viewBox="0 0 1024 1024" id="svg-user"><path d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"></path></svg></div></button>
                     <div id="myDropdown" class="dropdown-content">
                         <a class="dropdown-link" href="index.php?logout=1" class="logout">Sair</a>
+                        <?php if ($_SESSION['email']=='luanlelis09@gmail.com') { ?>
+                        <a class="dropdown-link" href="_sites/admin.php">Admin</a>
+                        <?php } ?>
                     </div>
                 </div>
             <?php } else { ?>
@@ -150,6 +152,13 @@ if (isset($_GET['token'])) {
             </div>
             </form>
         </div>
+    </div>
+
+    <div class="napne-index-section">
+        <h1>Núcleo de Apoio Pessoas com Necessidades Especificas</h1>
+        <hr>
+        <p>A grosso modo, a língua de sinais brasileira ou Libras é uma língua distinta(assim como o português) não oral utilizada pela comunidade surda, ela reconhecida como a segunda língua oficial do país desde 2002. Vale lembrar que essa língua é exclusivamente nacional e devido a diversidade brasileira, muitos sinais são dados de acordo a região do país, o que trazendo para o português como exemplo, é conhecido como sotaque. O Instituo Federal Baiano Campus Guanambi é dotado de políticas inclusivas que permitem a plena participação do surdo ás atividades estudantis.</p>
+        <a href="_sites/napne.php">Saber mais</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

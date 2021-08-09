@@ -726,7 +726,7 @@ div.article-passo-3 {
     color: #fff;
 }
 
-/* site de consulta de manifestação */
+/* site de consulta de manifestação e admin*/
 
 .section-consulta {
     text-align: center;
@@ -750,6 +750,13 @@ div.article-passo-3 {
     width: 99%;
 }
 
+.admin-div table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .article-consulta tr:hover .td1 {
     background-color: #b8b8b8;
 }
@@ -758,22 +765,134 @@ div.article-passo-3 {
     background-color: #88cc94;
 }
 
-.article-consulta td {
+.article-consulta td, .admin-div td, .admin-div th {
     font-family: Poppins-Regular;
     font-size: 1.3rem;
     padding: 5px;
 }
 
-.article-consulta .td1 {
-    background-color: #DDDDDD;
+.article-consulta td {
     width: 50%;
+}
+
+.article-consulta .td1, .admin-div .td1 {
+    background-color: #DDDDDD;
     border: 1px rgb(146, 146, 146) solid;
 }
 
-.article-consulta .td2 {
+.article-consulta .td2, .admin-div .td2 {
     background-color: #aaf0b6;
-    width: 50%;
     border: 1px #74b37e solid;
+}
+
+.admin-div a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.admin-div select, .admin-div textarea, input {
+    text-align: center;
+    width: 100%;
+}
+
+.admin-div textarea {
+    width: 97%;
+}
+
+.admin-div button {
+    background: #f1f1f1;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: #707070 solid 1px;
+    border-radius: 2px;
+}
+
+/* napne */
+
+.napne-index-section {
+    margin-top: 5vh;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    background: rgb(33,157,41);
+    background: linear-gradient(110deg, rgba(33,157,41,1) 0%, rgba(21,122,27,1) 100%);
+    color: #fff;
+}
+
+.napne-index-section h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.napne-index-section hr {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.napne-index-section p {
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.napne-index-section a {
+    color: #000;
+    padding: 6px;
+    padding-right: 16px;
+    padding-left: 16px;
+    background: #fff;
+    border: 1px solid #999;
+    margin-top: 100px;
+}
+
+/* napne */
+
+.napne-section {
+    width: 85vw;
+    margin-bottom: 10vh;
+}
+
+.napne-section .h1 {
+    margin-top: 5vh;
+}
+
+.napne-section h1 {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.napne-section hr {
+    background: #333;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    margin-bottom: 5vh;
+}
+
+.napne-section p {
+    text-align: justify;
+    text-indent: 3.5vw;
+    margin: 25px;
+    font-weight: normal;
+}
+
+.napne-section li {
+    font-weight: bold;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+
+.napne-section .li {
+    margin-top: 1vh;
+}
+
+.napne-section .center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (min-width: 1025px) {
@@ -864,7 +983,7 @@ div.article-passo-3 {
     /* article que escolhe o tipo de manifestação */
     
     .section-manifestação-escolha {
-        height: 540px;
+        height: 500px;
     }
     
     hr.article-manifestação {
@@ -917,6 +1036,26 @@ div.article-passo-3 {
     .article-consulta td {
         height: 50px;
     }
+
+    /* napne */
+
+    .napne-section .right {
+        float: right;
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+
+    .napne-section .left {
+        float: left;
+        margin-right: 20px;
+        margin-left: 25px;
+    }
+
+    .h150 { height: 150px; }
+    .h160 { height: 160px; }
+    .h200 { height: 200px; }
+    .h300 { height: 300px; }
+    
 }
 
 @media (max-width: 1024px) {
@@ -1037,4 +1176,25 @@ div.article-passo-3 {
     .article-consulta td {
         height: 80px;
     }
+
+    /* napne */
+
+    .napne-section .right, .napne-section .left {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .napne-section h1 {
+        font-size: 35px;
+    }
+
+    .napne-section img {
+        height: 150px;
+    }
+
+    .mobile-margin {
+        padding: 0;
+    }
+
 }
