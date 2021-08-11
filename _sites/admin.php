@@ -1,7 +1,7 @@
 <?php require_once '../_php/authController.php';
 require_once '../_php/adminController.php';
 
-if ($_SESSION['email']!='luanlelis09@gmail.com') {
+if ($_SESSION['id']!='4') {
     header('Location: ../index.php');    
 }
 

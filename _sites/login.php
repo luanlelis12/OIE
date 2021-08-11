@@ -60,13 +60,7 @@
                 <span class="focus-input" id="focus3" data-symbol="">
                 </span>
             </div>
-
-            <div class="text-password">
-                <a href="#">
-                    Esqueceu a senha?
-                </a>
-            </div>
-
+            
             <div class="block-button">
                 <input class="button-login" type="submit" value="FAZER LOGIN" name="logar">
             </div>

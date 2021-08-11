@@ -62,7 +62,7 @@ if (isset($_POST['Cadastrar'])) {
 
             sendVerificationEmail($email, $token);
 
-            header('Location: ../_sites/cadastro.php');
+            header('Location: ../_sites/login.php');
             exit();
         } else {
             $errors['db_error'] = "Database error: falha ao cadastrar";

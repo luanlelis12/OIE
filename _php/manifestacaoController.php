@@ -91,13 +91,7 @@ if (isset($_POST['enviar'])) {
     $stmt->bind_param('sssssissi', $chave, $tipo, $orgao, $assunto, $descricao, $identificar, $status, $resposta, $id_user);
 
     if ($stmt->execute()) {
-        unset($_SESSION['tipo']);
-        unset($_SESSION['identificar']);
-        unset($_SESSION['orgao']);
-        unset($_SESSION['descricao']);
-        unset($_SESSION['assunto']);
-        
-        echo("<script type='text/javascript'>alert('A chave de sua manifestação é ". $chave .". Com ela você poderá acessar-lá para verificar a manifestação.'); location.href='http://localhost/oie/index.php';</script>");
+        echo("<script type='text/javascript'> alert('A chave de sua manifestação é ". $chave .". Com ela você poderá acessar-lá para verificar a manifestação.'); location.href='http://localhost/oie/index.php';</script>");
     } else {
         $errors['db_error'] = "Database error: falha ao enviar manifestação";
     }

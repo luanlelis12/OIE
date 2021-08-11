@@ -76,9 +76,7 @@
             </div>
 
             <div class="block-button" id="button-cadastro">
-                <button class="button-login">
-                    <input class="button-login" type="submit" value="FAZER CADASTRO" name="Cadastrar">
-                </button>
+                <input class="button-login" type="submit" value="FAZER CADASTRO" name="Cadastrar">
             </div>
 
             <div class="block-register">

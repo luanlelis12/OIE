@@ -395,6 +395,7 @@ span.article-login {
 }
 
 .input-login {
+    text-align: left;
     font-family: Poppins-Medium;
     font-size: 16px;
     color: #333;
@@ -575,6 +576,10 @@ span.article-login {
     margin-left: 20px;
 }
 
+.button-login {
+    margin-top: 10vh;
+}
+
 /* base das manifestação */
 
 .section-manifestação {
@@ -719,6 +724,7 @@ div.article-passo-3 {
     color: #333;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+    width: min-content;
 }
 
 .btn-continuar:hover, .btn-voltar:hover, .btn-enviar:hover {

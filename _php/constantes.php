@@ -1,7 +1,7 @@
 <?php
 
 define('EMAIL', 'ouvidoriaie@gmail.com');
-define('PASSWORD', 'oieif123');
+define('PASSWORD', '190576_Gbi');
 
 
 define('DB_HOST', 'localhost');
